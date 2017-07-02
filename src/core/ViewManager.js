@@ -142,7 +142,7 @@ var ViewManager = React.createClass({
 		if (this.state.options.transition) {
 			// console.log('applying view transition: ' + this.state.options.transition + ' to view ' + this.state.currentView);
 			transitionName = 'view-transition-' + this.state.options.transition;
-			if (this.state.options.transition === 'fade') {
+			if (this.state.options.transition === 'fade' || this.state.options.transition === 'fade-contract' || this.state.options.transition === 'fade-expand') {
 				var transitionDurationEnter = 10;
 				var transitionDurationLeave = 340;
 			} else {
