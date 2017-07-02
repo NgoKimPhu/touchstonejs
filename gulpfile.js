@@ -27,7 +27,7 @@ const SITE_FILES = [
 gulp.task('build:lib', function () {
 	return gulp.src('src/**/*')
 		.pipe(babel({
-			plugins: ['transform-object-assign', 'transform-object-rest-spread'],
+			plugins: ['add-module-exports', 'transform-object-assign', 'transform-object-rest-spread'],
 			presets: ['es2015', 'react'],
 		}))
 		.pipe(gulp.dest('lib'));
@@ -54,7 +54,7 @@ gulp.task('build:site:files', function () {
 gulp.task('build:site:js', function () {
 	browserify('site/site.js')
 		.transform(babelify.configure({
-			plugins: ['transform-object-assign', 'transform-object-rest-spread'],
+			plugins: ['add-module-exports', 'transform-object-assign', 'transform-object-rest-spread'],
 			presets: ['es2015', 'react'],
 		}))
 		.bundle()
