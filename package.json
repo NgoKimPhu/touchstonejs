@@ -20,7 +20,6 @@
   ],
   "main": "src/index.js",
   "files": [
-    "lib/",
     "src/",
     "less"
   ],
