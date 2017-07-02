@@ -1,4 +1,4 @@
-var animation = require('tween.js');
+var animation = require('@tweenjs/tween.js');
 
 function update () {
 	animation.update();
