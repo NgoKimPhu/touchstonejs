@@ -42,7 +42,7 @@
   "dependencies": {
     "blacklist": "^1.1.2",
     "classnames": "^2.2.3",
-    "tween.js": "^16.3.4"
+    "@tweenjs/tween.js": "^16.8.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",
