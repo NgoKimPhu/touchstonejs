@@ -29,7 +29,7 @@ module.exports = React.createClass({
 		var animatedBar = this.props.visible ? <div className={className}>{pulseWrap}</div> : null;
 
 		var component = this.props.animated ? (
-			<ReactCSSTransitionGroup transitionName="Alertbar" transitionEnterTimeout={300} transitionLeaveTimeout={300} component="div">
+			<ReactCSSTransitionGroup transitionName="Alertbar" transitionEnterTimeout={240} transitionLeaveTimeout={240} component="div">
 				{animatedBar}
 			</ReactCSSTransitionGroup>
 		) : <div className={className}>{pulseWrap}</div>;
